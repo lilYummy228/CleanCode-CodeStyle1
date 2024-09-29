@@ -6,6 +6,6 @@
             if (array[i] == element)
                 return i;
 
-        return -1;
+        return -1; 
     }
 }
