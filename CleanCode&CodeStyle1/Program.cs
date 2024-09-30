@@ -2,7 +2,7 @@
 
 internal class Program
 {
-    public static int TryFindElement(int[] array, int element)
+    public static int FindElement(int[] array, int element)
     {
         if (array == null || array.Length == 0)
             throw new ArgumentNullException($"{nameof(array)} is empty");
