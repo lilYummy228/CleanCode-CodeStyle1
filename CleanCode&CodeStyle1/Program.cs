@@ -1,11 +1,16 @@
-﻿internal class Program
+﻿using System;
+
+internal class Program
 {
     public static int TryFindElement(int[] array, int element)
     {
+        if (array == null || array.Length == 0)
+            throw new ArgumentNullException($"{nameof(array)} is empty");
+
         for (int i = 0; i < array.Length; i++)
             if (array[i] == element)
                 return i;
 
-        return -1; 
+        throw new ArgumentNullException($"{nameof(array)} hasn't got an {nameof(element)}");
     }
 }
